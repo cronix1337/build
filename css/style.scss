@@ -81,7 +81,7 @@ body
 
 .page
 {
-  background: url("../images/page_bg.jpg") repeat center center;
+  background: url("../images/page_bg.jpeg") repeat center center;
   overflow-x: hidden;
 
   .header
@@ -102,7 +102,7 @@ body
     .mw
     {
       padding: 2vh 2vh;
-      @include df(row,space-between,center);
+      @include df(row,center,center);
       position: relative;
       z-index: 2;
 
@@ -165,76 +165,76 @@ body
       .right_side
       {
         @include df(row,flex-end,center);
+      }
 
-        .soc_icons
-        {
-          margin-right: 28px;
+      .soc_icons
+      {
+        margin-right: 28px;
 
-          ul
-          {
-            @include df-r-c-c();
-
-            li
-            {
-              margin-right: 24px;
-
-              &:last-child
-              {
-                margin-right: 0;
-              }
-
-              a
-              {
-                opacity: 0.5;
-                width: 24px;
-                height: 24px;
-                @include df-r-c-c();
-
-                &:hover
-                {
-                  opacity: 1;
-                }
-
-                img
-                {
-                  width: 100%;
-                }
-              }
-            }
-          }
-        }
-
-        .btn_c
-        {
-          @include df-r-fe-c();
-
-          .btn_get_merch
-          {
-            margin-left: 10px;
-            background: transparent;
-            max-width: 140px;
-
-            &:hover
-            {
-              background: rgba($main_color,0.4);
-            }
-          }
-        }
-
-        .o_xs_menu
+        ul
         {
           @include df-r-c-c();
-          display: none;
 
-          img
+          li
           {
-            width: 30px;
-            -webkit-transition: 0.5s;
-            -o-transition: 0.5s;
-            transition: 0.5s;
-            cursor: pointer;
-            height: 30px;
+            margin-right: 24px;
+
+            &:last-child
+            {
+              margin-right: 0;
+            }
+
+            a
+            {
+              opacity: 0.5;
+              width: 24px;
+              height: 24px;
+              @include df-r-c-c();
+
+              &:hover
+              {
+                opacity: 1;
+              }
+
+              img
+              {
+                width: 100%;
+              }
+            }
           }
+        }
+      }
+
+      .btn_c
+      {
+        @include df-r-fe-c();
+
+        .btn_get_merch
+        {
+          margin-left: 10px;
+          background: transparent;
+          max-width: 140px;
+
+          &:hover
+          {
+            background: rgba($main_color,0.4);
+          }
+        }
+      }
+
+      .o_xs_menu
+      {
+        @include df-r-c-c();
+        display: none;
+
+        img
+        {
+          width: 30px;
+          -webkit-transition: 0.5s;
+          -o-transition: 0.5s;
+          transition: 0.5s;
+          cursor: pointer;
+          height: 30px;
         }
       }
     }
@@ -615,7 +615,7 @@ body
         -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
 
         &:last-child
         {
@@ -649,10 +649,13 @@ body
             font-style: normal;
             font-weight: normal;
             font-size: 35px;
-            line-height: 26px;
+            line-height: 120%;
             color: #FFFFFF;
             font-family: 'Neucha', cursive !important;
             margin-bottom: 20px;
+            border: 1px solid $white;
+            padding: 20px;
+            background: $black;
           }
 
           ul
@@ -1194,6 +1197,16 @@ body
       }
     }
   }
+
+  .rarity
+  {
+    width: 100%;
+
+    img
+    {
+      width: 100%;
+    }
+  }
 }
 
 
@@ -1217,6 +1230,14 @@ body
 
       .mw
       {
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+
         .left_side
         {
           .logo
@@ -1231,43 +1252,63 @@ body
 
         .nav
         {
-          display: none;
+          width: 100%;
+
+          ul
+          {
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+
+            li
+            {
+              a
+              {
+                font-size: 14px;
+              }
+            }
+          }
         }
 
         .right_side
         {
-          .soc_icons
+        }
+
+        .soc_icons
+        {
+          margin: 0 auto 5px;
+
+          ul
           {
-            margin-right: 12px;
-
-            ul
+            li
             {
-              li
-              {
-                margin-right: 10px;
+              margin-right: 10px;
 
-                a
-                {
-                  width: 20px;
-                  height: 20px;
-                }
+              a
+              {
+                width: 20px;
+                height: 20px;
               }
             }
           }
+        }
 
-          .btn_c
-          {
-            display: none;
-          }
+        .btn_c
+        {
+          display: none;
+        }
 
-          .o_xs_menu
-          {
-            display: -webkit-box;
-            display: -webkit-flex;
-            display: -ms-flexbox;
-            display: flex;
-            min-width: 30px;
-          }
+        .o_xs_menu
+        {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          min-width: 30px;
         }
       }
     }
@@ -1415,8 +1456,8 @@ body
 
             .h4
             {
-              font-size: 28px;
-              margin-bottom: 15px;
+              font-size: 24px;
+              padding: 15px;
             }
 
             ul
@@ -1735,13 +1776,21 @@ body
 
       .mw
       {
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+
         .left_side
         {
           .logo
           {
             a
             {
-              font-size: 20px;
+              font-size: 16px;
               line-height: 16px;
             }
           }
@@ -1749,39 +1798,63 @@ body
 
         .nav
         {
-          display: none;
+          width: 100%;
+
+          ul
+          {
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+
+            li
+            {
+              a
+              {
+                font-size: 14px;
+              }
+            }
+          }
         }
 
         .right_side
         {
-          .soc_icons
+        }
+
+        .soc_icons
+        {
+          margin: 0 auto 5px;
+
+          ul
           {
-            margin-right: 12px;
-
-            ul
+            li
             {
-              li
-              {
-                margin-right: 10px;
+              margin-right: 10px;
 
-                a
-                {
-                  width: 20px;
-                  height: 20px;
-                }
+              a
+              {
+                width: 20px;
+                height: 20px;
               }
             }
           }
+        }
 
-          .o_xs_menu
-          {
-            display: -webkit-box;
-            display: -webkit-flex;
-            display: -ms-flexbox;
-            display: flex;
-            min-width: 30px;
-            margin-left: 10px;
-          }
+        .btn_c
+        {
+          display: none;
+        }
+
+        .o_xs_menu
+        {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          min-width: 30px;
         }
       }
     }
