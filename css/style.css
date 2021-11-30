@@ -956,61 +956,9 @@ body {
       .page .roadmap .mw .m_title .h2 {
         font-size: 35px;
         line-height: 26px; }
-    .page .roadmap .mw .cont ul li {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-      flex-direction: row;
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-      justify-content: space-between;
-      -webkit-box-align: start;
-      -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-      align-items: flex-start;
-      -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      width: 50%;
-      position: relative;
-      padding-right: 84px; }
-      .page .roadmap .mw .cont ul li:nth-child(2n) {
-        padding-left: 84px;
-        padding-right: 0;
-        margin: 0 0 0 auto; }
-        .page .roadmap .mw .cont ul li:nth-child(2n) .num {
-          left: -23px;
-          right: auto; }
-        .page .roadmap .mw .cont ul li:nth-child(2n) .desc {
-          text-align: left; }
-      .page .roadmap .mw .cont ul li .desc {
-        text-align: right; }
-        .page .roadmap .mw .cont ul li .desc .h5 {
-          font-style: normal;
-          font-weight: bold;
-          font-size: 22px;
-          line-height: 26px;
-          color: #FFFFFF;
-          margin-bottom: 16px; }
-        .page .roadmap .mw .cont ul li .desc p {
-          font-style: normal;
-          font-weight: 500;
-          font-size: 18px;
-          line-height: 26px;
-          color: #FFFFFF; }
-      .page .roadmap .mw .cont ul li:last-child .num:after {
-        display: none; }
-      .page .roadmap .mw .cont ul li .num {
-        width: 46px;
-        height: 46px;
-        background: #FFFFFF;
-        border-radius: 50%;
+    .page .roadmap .mw .cont {
+      background: #000; }
+      .page .roadmap .mw .cont ul li {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -1020,34 +968,88 @@ body {
         -webkit-flex-direction: row;
         -ms-flex-direction: row;
         flex-direction: row;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
-        position: absolute;
-        right: -23px;
-        top: 50px; }
-        .page .roadmap .mw .cont ul li .num:after {
-          content: '';
-          background: #fff;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        width: 50%;
+        position: relative;
+        padding-right: 84px; }
+        .page .roadmap .mw .cont ul li:nth-child(2n) {
+          padding-left: 84px;
+          padding-right: 0;
+          margin: 0 0 0 auto; }
+          .page .roadmap .mw .cont ul li:nth-child(2n) .num {
+            left: -23px;
+            right: auto; }
+          .page .roadmap .mw .cont ul li:nth-child(2n) .desc {
+            text-align: left; }
+        .page .roadmap .mw .cont ul li .desc {
+          text-align: right; }
+          .page .roadmap .mw .cont ul li .desc .h5 {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 26px;
+            color: #FFFFFF;
+            margin-bottom: 16px; }
+          .page .roadmap .mw .cont ul li .desc p {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 26px;
+            color: #FFFFFF; }
+        .page .roadmap .mw .cont ul li:last-child .num:after {
+          display: none; }
+        .page .roadmap .mw .cont ul li .num {
+          width: 46px;
+          height: 46px;
+          background: #FFFFFF;
+          border-radius: 50%;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+          -ms-flex-align: center;
+          align-items: center;
           position: absolute;
-          left: 0;
-          right: 0;
-          width: 3px;
-          height: 100px;
-          top: 46px;
-          margin: 0 auto; }
-        .page .roadmap .mw .cont ul li .num span {
-          font-style: normal;
-          font-weight: bold;
-          font-size: 18px;
-          line-height: 26px;
-          text-align: center;
-          color: #0187FF; }
+          right: -23px;
+          top: 50px; }
+          .page .roadmap .mw .cont ul li .num:after {
+            content: '';
+            background: #fff;
+            position: absolute;
+            left: 0;
+            right: 0;
+            width: 3px;
+            height: 100px;
+            top: 46px;
+            margin: 0 auto; }
+          .page .roadmap .mw .cont ul li .num span {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 26px;
+            text-align: center;
+            color: #0187FF; }
   .page .faq .mw {
     padding: 0 2vh 80px; }
     .page .faq .mw .m_title {
